@@ -1,3 +1,11 @@
+import Stack from "react-bootstrap/Stack";
+import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Header from "./components/Header";
+import Projects from "./components/Projects";
+import Sidebar from "./components/Sidebar";
+
 function App() {
   const projects = [
     {
@@ -15,21 +23,17 @@ function App() {
   ]
   return (
     <>
-      <h1>Portfolio</h1>
-      <h4>Projects</h4>
-      {projects.length === 0 ?
-        <p>No projects yet!</p>
-      :
-        projects.map(project => {
-          return(
-            <div key={project.id}>
-              <p><b>{project.title}</b></p>
-              <p>{project.description}</p>
-              <a href={project.link} target="_blank">View</a>
-            </div>
-          )
-        })
-      }
+    <Container fluid className="App">
+      <Header />
+      <Container>
+        <Stack direction="horizontal">
+          <Sidebar />
+          <Container>
+            <Projects />
+          </Container>
+        </Stack>
+      </Container>
+    </Container>
     </>
   );
 }
