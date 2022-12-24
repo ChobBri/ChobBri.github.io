@@ -22,3 +22,7 @@
 .Sidebar a:hover {
   background-color: #eee;
 }
+
+.Sidebar .nav-item .active {
+  background-color: #def;
+}
