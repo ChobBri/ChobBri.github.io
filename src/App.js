@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
+  const projects = [
+    {
+      id: 1,
+      title: 'Psychokinefish',
+      description: 'Horizontal scrolling fish game involving psychokinefish.',
+      link: 'https://chobbri.itch.io/psychokinefish',
+    },
+    {
+      id: 2,
+      title: 'Wiggle Match',
+      description: 'Block matching puzzle game',
+      link: 'https://chobbri.itch.io/wiggle-match',
+    },
+  ]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>Portfolio</h1>
+      <h4>Projects</h4>
+      {projects.length === 0 ?
+        <p>No projects yet!</p>
+      :
+        projects.map(project => {
+          return(
+            <div key={project.id}>
+              <p><b>{project.title}</b></p>
+              <p>{project.description}</p>
+              <a href={project.link} target="_blank">View</a>
+            </div>
+          )
+        })
+      }
+    </>
   );
 }
 
