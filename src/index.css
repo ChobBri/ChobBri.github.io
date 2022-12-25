@@ -26,3 +26,46 @@
 .Sidebar .nav-item .active {
   background-color: #def;
 }
+
+.Project {
+  padding: 10px;
+  border-bottom: 2px solid #eee;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  transition: 0.3s;
+}
+
+.ProjectContainer{
+  align-items: start;
+}
+
+.Project .ProjectCover {
+  transition: transform 1s ease;
+}
+
+.Project:hover .ProjectCover {
+  transform: scale(1.05);
+}
+
+.Project a {
+
+  background-color: #eee;
+  text-decoration: none;
+}
+
+.ProjectCoverContainer {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.Project:hover {
+  background-color: #f3f3f8;
+}
+
+.Sidebar a:hover {
+  background-color: #eee;
+}
+
+.ProjectAttributes {
+  min-width: 300px;
+}
