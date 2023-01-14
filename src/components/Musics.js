@@ -1,5 +1,4 @@
 import Music from "./Music";
-import Project from "./Project";
 
 export default function Musics() {
     const musics = [

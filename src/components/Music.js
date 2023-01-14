@@ -1,5 +1,4 @@
 import Stack from 'react-bootstrap/Stack';
-import Image from 'react-bootstrap/Image';
 import ReactAudioPlayer from 'react-audio-player';
 
 export default function Music( {music}) {

@@ -1,4 +1,3 @@
-import Projects from "../components/Projects";
 import Body from "../components/Body";
 import Musics from "../components/Musics";
 import Project from "../components/Project";

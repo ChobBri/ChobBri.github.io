@@ -1,4 +1,3 @@
-import Projects from "../components/Projects";
 import Body from "../components/Body";
 
 export default function ContactPage() {
