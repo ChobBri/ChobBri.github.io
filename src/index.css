@@ -48,7 +48,6 @@
 }
 
 .Project a {
-
   background-color: #eee;
   text-decoration: none;
 }
@@ -68,4 +67,24 @@
 
 .ProjectAttributes {
   min-width: 300px;
+}
+
+.HeaderLink {
+  border-radius: 5px;
+  background-color: transparent;
+  transition: background-color 0.4s;
+}
+
+.HeaderLink.active {
+  background-color: #def;
+}
+
+.AudioPlayer {
+  width: max-content;
+}
+
+.HomePageDescription {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #def;
 }
