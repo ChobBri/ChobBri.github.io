@@ -7,7 +7,7 @@ export default function HomePage() {
         <div className="HomePageDescription">
         <p>My name is Brian. If you are reading this, you are probably cool, probably.</p>
 
-        <p>I think this is a boring page. You should check out the 'projects' and 'music' page.</p>
+        <p>I think this is a boring page. You should check out the 'Projects' and 'Music' pages.</p>
         </div>
     </Body>
   );
